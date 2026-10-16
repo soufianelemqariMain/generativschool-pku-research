@@ -1,0 +1,11 @@
+{
+  "python": "3.9.6",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "package_version": "1.0.1",
+  "wall_seconds": 0.035131833,
+  "cpu_seconds": 0.028521999999999992,
+  "peak_rss_bytes": 23740416,
+  "cost_total": null,
+  "external_paid_compute": "not_requested",
+  "gpu": "not_used"
+}

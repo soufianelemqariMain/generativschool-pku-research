@@ -1,0 +1,9 @@
+{
+  "NOTICE.md": "cc2eb0bcad98f8eefff9459c8816b64ff149704824a1424fee4633161292ba33",
+  "configs/study.json": "145647b6fe18e2ece520e106c741d7478ebd810afda27e6c3205e561dc85478c",
+  "data/activity_pairs.csv": "d0920d8c024ec0aede39a0305d583f419d5936fa73d0cf8f5e2e7154144d0c9a",
+  "data/assay-context.json": "37cdba1f54b3a1fbe88bd1fbb5eabef5783cfe70508a136ba4efa5d643d28aca",
+  "reference/pilot.json": "08b27b55f242aba3fa0801a896d7d70905c1d16bf1a0b328b23df002b0063ac9",
+  "sources/PMC6628251.xml": "7234a60ac41b3b2559817fefc1e689f244cc3e50ff00b1d8b4c5a5227761fd31",
+  "sources/download-record.json": "a18cd8ff6ec0cd9ed24efbd4994f28e273367fa6a050d771bd1a3a4948d0f85c"
+}

@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "original_v1_unchanged": true,
+  "standard_mit_unchanged": true,
+  "scientific_inputs_unchanged": true,
+  "report_byte_identical_to_v1_and_restoration": true,
+  "wheel_matches_sources_and_notices": true,
+  "snapshot_notices_identical": true,
+  "private_path_scan_evidence_and_wheel": "passed; XML bibliographic URLs excluded",
+  "raw_log_sha256": "f8911c02e4c007da44e9501e19ed0295d4864ad8b4b7e0efa2fd8578d12f00f3",
+  "raw_log_storage": "Internal task scratch; not included in public archive",
+  "wheel_sha256": "9f3e793745328eba423595068c30e7d0a3a3f1814e5aa303f867ce44862f2d23"
+}

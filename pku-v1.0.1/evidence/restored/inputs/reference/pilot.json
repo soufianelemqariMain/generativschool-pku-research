@@ -1,0 +1,254 @@
+{
+  "scenarios": [
+    {
+      "scenario": "table3",
+      "n_variants": 7,
+      "predictions": [
+        {
+          "variant": "p.Asn167Tyr",
+          "train_variants": [
+            "p.Thr200Asn",
+            "p.Asp229Gly",
+            "p.Gly239Ala",
+            "p.Phe263Ser",
+            "p.Ala342Pro",
+            "p.Ile406Met"
+          ],
+          "observed_delta_pp": 10.200000000000003,
+          "zero_effect": 0.0,
+          "train_mean": -0.16666666666666707,
+          "ridge_activity_alpha1": -3.820168914662348
+        },
+        {
+          "variant": "p.Thr200Asn",
+          "train_variants": [
+            "p.Asn167Tyr",
+            "p.Asp229Gly",
+            "p.Gly239Ala",
+            "p.Phe263Ser",
+            "p.Ala342Pro",
+            "p.Ile406Met"
+          ],
+          "observed_delta_pp": -6.1000000000000085,
+          "zero_effect": 0.0,
+          "train_mean": 2.5500000000000016,
+          "ridge_activity_alpha1": 2.508522278084477
+        },
+        {
+          "variant": "p.Asp229Gly",
+          "train_variants": [
+            "p.Asn167Tyr",
+            "p.Thr200Asn",
+            "p.Gly239Ala",
+            "p.Phe263Ser",
+            "p.Ala342Pro",
+            "p.Ile406Met"
+          ],
+          "observed_delta_pp": 0.0,
+          "zero_effect": 0.0,
+          "train_mean": 1.5333333333333334,
+          "ridge_activity_alpha1": 2.6140869001671434
+        },
+        {
+          "variant": "p.Gly239Ala",
+          "train_variants": [
+            "p.Asn167Tyr",
+            "p.Thr200Asn",
+            "p.Asp229Gly",
+            "p.Phe263Ser",
+            "p.Ala342Pro",
+            "p.Ile406Met"
+          ],
+          "observed_delta_pp": 0.9,
+          "zero_effect": 0.0,
+          "train_mean": 1.3833333333333333,
+          "ridge_activity_alpha1": 2.3812473896556643
+        },
+        {
+          "variant": "p.Phe263Ser",
+          "train_variants": [
+            "p.Asn167Tyr",
+            "p.Thr200Asn",
+            "p.Asp229Gly",
+            "p.Gly239Ala",
+            "p.Ala342Pro",
+            "p.Ile406Met"
+          ],
+          "observed_delta_pp": 0.9,
+          "zero_effect": 0.0,
+          "train_mean": 1.3833333333333333,
+          "ridge_activity_alpha1": 2.3812473896556643
+        },
+        {
+          "variant": "p.Ala342Pro",
+          "train_variants": [
+            "p.Asn167Tyr",
+            "p.Thr200Asn",
+            "p.Asp229Gly",
+            "p.Gly239Ala",
+            "p.Phe263Ser",
+            "p.Ile406Met"
+          ],
+          "observed_delta_pp": 9.9,
+          "zero_effect": 0.0,
+          "train_mean": -0.11666666666666665,
+          "ridge_activity_alpha1": 0.05285228454087752
+        },
+        {
+          "variant": "p.Ile406Met",
+          "train_variants": [
+            "p.Asn167Tyr",
+            "p.Thr200Asn",
+            "p.Asp229Gly",
+            "p.Gly239Ala",
+            "p.Phe263Ser",
+            "p.Ala342Pro"
+          ],
+          "observed_delta_pp": -6.599999999999994,
+          "zero_effect": 0.0,
+          "train_mean": 2.6333333333333324,
+          "ridge_activity_alpha1": 2.4768496965710227
+        }
+      ],
+      "metrics": {
+        "zero_effect": {
+          "mae_pp": 4.942857142857144,
+          "rmse_pp": 6.3745027817301745
+        },
+        "train_mean": {
+          "mae_pp": 5.823809523809525,
+          "rmse_pp": 7.277133135147844
+        },
+        "ridge_activity_alpha1": {
+          "mae_pp": 6.732752897750778,
+          "rmse_pp": 8.117432288709665
+        }
+      }
+    },
+    {
+      "scenario": "section3.3_Ile406Met",
+      "n_variants": 7,
+      "predictions": [
+        {
+          "variant": "p.Asn167Tyr",
+          "train_variants": [
+            "p.Thr200Asn",
+            "p.Asp229Gly",
+            "p.Gly239Ala",
+            "p.Phe263Ser",
+            "p.Ala342Pro",
+            "p.Ile406Met"
+          ],
+          "observed_delta_pp": 10.200000000000003,
+          "zero_effect": 0.0,
+          "train_mean": -0.38333333333333325,
+          "ridge_activity_alpha1": -4.2669091599416875
+        },
+        {
+          "variant": "p.Thr200Asn",
+          "train_variants": [
+            "p.Asn167Tyr",
+            "p.Asp229Gly",
+            "p.Gly239Ala",
+            "p.Phe263Ser",
+            "p.Ala342Pro",
+            "p.Ile406Met"
+          ],
+          "observed_delta_pp": -6.1000000000000085,
+          "zero_effect": 0.0,
+          "train_mean": 2.3333333333333353,
+          "ridge_activity_alpha1": 2.0511616983928542
+        },
+        {
+          "variant": "p.Asp229Gly",
+          "train_variants": [
+            "p.Asn167Tyr",
+            "p.Thr200Asn",
+            "p.Gly239Ala",
+            "p.Phe263Ser",
+            "p.Ala342Pro",
+            "p.Ile406Met"
+          ],
+          "observed_delta_pp": 0.0,
+          "zero_effect": 0.0,
+          "train_mean": 1.3166666666666673,
+          "ridge_activity_alpha1": 2.521036797636521
+        },
+        {
+          "variant": "p.Gly239Ala",
+          "train_variants": [
+            "p.Asn167Tyr",
+            "p.Thr200Asn",
+            "p.Asp229Gly",
+            "p.Phe263Ser",
+            "p.Ala342Pro",
+            "p.Ile406Met"
+          ],
+          "observed_delta_pp": 0.9,
+          "zero_effect": 0.0,
+          "train_mean": 1.1666666666666672,
+          "ridge_activity_alpha1": 2.2877747944187274
+        },
+        {
+          "variant": "p.Phe263Ser",
+          "train_variants": [
+            "p.Asn167Tyr",
+            "p.Thr200Asn",
+            "p.Asp229Gly",
+            "p.Gly239Ala",
+            "p.Ala342Pro",
+            "p.Ile406Met"
+          ],
+          "observed_delta_pp": 0.9,
+          "zero_effect": 0.0,
+          "train_mean": 1.1666666666666672,
+          "ridge_activity_alpha1": 2.2877747944187274
+        },
+        {
+          "variant": "p.Ala342Pro",
+          "train_variants": [
+            "p.Asn167Tyr",
+            "p.Thr200Asn",
+            "p.Asp229Gly",
+            "p.Gly239Ala",
+            "p.Phe263Ser",
+            "p.Ile406Met"
+          ],
+          "observed_delta_pp": 9.9,
+          "zero_effect": 0.0,
+          "train_mean": -0.33333333333333287,
+          "ridge_activity_alpha1": -0.04484523775921084
+        },
+        {
+          "variant": "p.Ile406Met",
+          "train_variants": [
+            "p.Asn167Tyr",
+            "p.Thr200Asn",
+            "p.Asp229Gly",
+            "p.Gly239Ala",
+            "p.Phe263Ser",
+            "p.Ala342Pro"
+          ],
+          "observed_delta_pp": -7.8999999999999915,
+          "zero_effect": 0.0,
+          "train_mean": 2.6333333333333324,
+          "ridge_activity_alpha1": 2.472907279365771
+        }
+      ],
+      "metrics": {
+        "zero_effect": {
+          "mae_pp": 5.128571428571429,
+          "rmse_pp": 6.58233566882933
+        },
+        "train_mean": {
+          "mae_pp": 5.947619047619049,
+          "rmse_pp": 7.565675412310817
+        },
+        "ridge_activity_alpha1": {
+          "mae_pp": 6.890344251704786,
+          "rmse_pp": 8.387384354746615
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "contract": "pku-paired-GroEL-v1",
+  "decision": "Lab Director 2026-10-16; integration informatique bornee, pas validation biologique",
+  "source_id": "S02",
+  "doi": "10.3390/genes10060459",
+  "source_url": "https://europepmc.org/articles/PMC6628251",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "Pecimonova et al. 2019, Genes 10(6):459",
+  "system": "E_coli_XL1_blue_MBP_PAH_purified",
+  "protein_ref": "NP_000268.1",
+  "endpoint": "activity_pct_WT",
+  "unit": "percent_WT",
+  "target_unit": "percentage_points_WT",
+  "alpha": 1.0,
+  "scale": 100.0,
+  "source_scenarios": [
+    "table3",
+    "section3.3_Ile406Met"
+  ],
+  "calibrated_intervals": false,
+  "model_selection": false,
+  "esm": {
+    "status": "not_executed_not_admitted",
+    "revision": null,
+    "weights_sha256": null
+  }
+}

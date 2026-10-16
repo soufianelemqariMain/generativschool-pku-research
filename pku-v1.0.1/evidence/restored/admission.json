@@ -1,0 +1,121 @@
+{
+  "status": "admitted",
+  "observations": 14,
+  "variants": 7,
+  "log": [
+    {
+      "check": "sha256_source_data_context_config_reference",
+      "status": "admitted"
+    },
+    {
+      "variant": "p.Asn167Tyr",
+      "condition": "none",
+      "status": "admitted",
+      "locator": "Table 3",
+      "conflict": ""
+    },
+    {
+      "variant": "p.Asn167Tyr",
+      "condition": "GroEL_ES",
+      "status": "admitted",
+      "locator": "Table 3",
+      "conflict": ""
+    },
+    {
+      "variant": "p.Thr200Asn",
+      "condition": "none",
+      "status": "admitted",
+      "locator": "Table 3",
+      "conflict": ""
+    },
+    {
+      "variant": "p.Thr200Asn",
+      "condition": "GroEL_ES",
+      "status": "admitted",
+      "locator": "Table 3",
+      "conflict": ""
+    },
+    {
+      "variant": "p.Asp229Gly",
+      "condition": "none",
+      "status": "admitted",
+      "locator": "Table 3",
+      "conflict": ""
+    },
+    {
+      "variant": "p.Asp229Gly",
+      "condition": "GroEL_ES",
+      "status": "admitted",
+      "locator": "Table 3",
+      "conflict": ""
+    },
+    {
+      "variant": "p.Gly239Ala",
+      "condition": "none",
+      "status": "admitted",
+      "locator": "Table 3",
+      "conflict": ""
+    },
+    {
+      "variant": "p.Gly239Ala",
+      "condition": "GroEL_ES",
+      "status": "admitted",
+      "locator": "Table 3",
+      "conflict": ""
+    },
+    {
+      "variant": "p.Phe263Ser",
+      "condition": "none",
+      "status": "admitted",
+      "locator": "Table 3",
+      "conflict": ""
+    },
+    {
+      "variant": "p.Phe263Ser",
+      "condition": "GroEL_ES",
+      "status": "admitted",
+      "locator": "Table 3",
+      "conflict": ""
+    },
+    {
+      "variant": "p.Ala342Pro",
+      "condition": "none",
+      "status": "admitted",
+      "locator": "Table 3",
+      "conflict": ""
+    },
+    {
+      "variant": "p.Ala342Pro",
+      "condition": "GroEL_ES",
+      "status": "admitted",
+      "locator": "Table 3",
+      "conflict": ""
+    },
+    {
+      "variant": "p.Ile406Met",
+      "condition": "none",
+      "status": "admitted",
+      "locator": "Table 3",
+      "conflict": "section_3.3_84.6_sd48.4"
+    },
+    {
+      "variant": "p.Ile406Met",
+      "condition": "GroEL_ES",
+      "status": "admitted",
+      "locator": "Table 3",
+      "conflict": ""
+    }
+  ],
+  "coverage": {
+    "sources": [
+      "S02"
+    ],
+    "systems": [
+      "E_coli_XL1_blue_MBP_PAH_purified"
+    ],
+    "endpoints": [
+      "activity_pct_WT"
+    ]
+  },
+  "warning": "Calcul sur moyennes publiees PAH/GroEL-ES bacterien; aucune validation biologique ou recommandation therapeutique."
+}

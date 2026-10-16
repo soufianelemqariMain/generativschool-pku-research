@@ -1,0 +1,11 @@
+{
+  "retrieved_utc": "2026-10-16T21:01:34.035481+00:00",
+  "record_origin": "scientific_delivery_GEN-19; copied without a new download",
+  "file": {
+    "filename": "PMC6628251.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6628251/fullTextXML",
+    "zip_member": null,
+    "sha256": "7234a60ac41b3b2559817fefc1e689f244cc3e50ff00b1d8b4c5a5227761fd31",
+    "bytes": 113455
+  }
+}

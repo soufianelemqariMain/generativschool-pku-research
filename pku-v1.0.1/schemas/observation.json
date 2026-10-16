@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Observation D01 after CSV parsing",
+  "type": "object",
+  "required": [
+    "source_id",
+    "source_locator",
+    "variant",
+    "protein_ref",
+    "system",
+    "intervention",
+    "endpoint",
+    "value",
+    "sd",
+    "n_purifications",
+    "n_assays_total",
+    "tetramer_pct",
+    "tetramer_sd",
+    "zero_semantics",
+    "conflict"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "source_id": {
+      "type": "string"
+    },
+    "source_locator": {
+      "type": "string"
+    },
+    "variant": {
+      "type": "string"
+    },
+    "protein_ref": {
+      "type": "string"
+    },
+    "system": {
+      "type": "string"
+    },
+    "endpoint": {
+      "type": "string"
+    },
+    "zero_semantics": {
+      "type": "string"
+    },
+    "conflict": {
+      "type": "string"
+    },
+    "intervention": {
+      "enum": [
+        "none",
+        "GroEL_ES"
+      ]
+    },
+    "n_purifications": {
+      "const": 3
+    },
+    "n_assays_total": {
+      "const": 9
+    },
+    "value": {
+      "type": "number",
+      "minimum": 0
+    },
+    "tetramer_pct": {
+      "type": "number",
+      "minimum": 0
+    },
+    "sd": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "tetramer_sd": {
+      "type": [
+        "number",
+        "null"
+      ],
+      "minimum": 0
+    }
+  }
+}

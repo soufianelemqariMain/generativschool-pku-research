@@ -1,0 +1,10 @@
+{
+  "status": "rejected",
+  "log": [
+    {
+      "status": "rejected",
+      "reason": "Source/donnee/configuration alteree: data/activity_pairs.csv"
+    }
+  ],
+  "warning": "Calcul sur moyennes publiees PAH/GroEL-ES bacterien; aucune validation biologique ou recommandation therapeutique."
+}

@@ -1,0 +1,15 @@
+# Architecture et contrat
+
+Auteur : Soufiane Lemqari.
+
+`core.py` extrait le tableau XML, charge le CSV, valide les observations, constitue les paires, ajuste les modèles et compare le pilote. `cli.py` orchestre les commandes, snapshots et mesures. `bundle/` contient données, article source, notices, configuration et référence numérique. `tests/` couvre les erreurs métier et les invariants de séparation. `scripts/verify.py` vérifie l'installation indépendante. Le socle historique reste intact, à côté de ce projet.
+
+Identité d'une observation : (source_id, source_locator, protein_ref, variant, system, intervention, endpoint). Pas d'identifiant patient. `value`/`sd` sont des pourcentages WT ; `tetramer_pct`/`tetramer_sd` sont des proportions de préparation, jamais des labels d'activité. Vide CSV devient `None`, les zéros restent explicites. Effectifs : trois purifications, neuf dosages au total, sans présumer neuf réplicats biologiques. Référence protéique NP_000268.1 et transcript NM_000277.2 conservés ; aucune conversion implicite.
+
+Une paire relie deux conditions de même variant/source/système/endpoint. L'unité de cible est le point WT ; les deux activités absolues sont conservées. Une validation rejette paire incomplète, doublon, valeur non finie, unité inconnue, source/droits/contexte incompatibles et conflit perdu. Les splits excluent tous les enregistrements du variant test. Les paramètres (moyennes train, pente, intercept, α et échelle) figurent dans chaque prédiction. Toute préparation statistique utilise uniquement le train ; l'échelle 100 est une conversion d'unité fixée.
+
+L'adaptateur courant est volontairement verrouillé à D01 : 14 observations, sept variants, extraction identique au XML, empreintes exactes. `audit` expose toutes les admissions ou la première cause de rejet bloquante ; il n'écarte jamais silencieusement une ligne pour poursuivre. `ingest` copie un bundle admis. `evaluate` réaudite, exécute et compare. `compare` recontrôle une exécution. `export` produit une fiche de conception. `restore` vérifie intégrité et code, copie puis recalcule le rapport, exigé identique.
+
+Les manifestes SHA-256 couvrent données, contexte, configuration, référence et code. Le verrou de comparaison provient du paquet installé, pas du bundle candidat. Le snapshot inclut entrées, journal et résultats. Les hashes sont non signés et ne protègent pas contre une personne qui modifie simultanément code et verrous ; ils détectent la dérive accidentelle, pas une falsification hostile. Timestamps/ressources sont séparés du rapport déterministe. Refus des destinations existantes. Un arrêt peut laisser un dossier partiel, à inspecter et renommer avant nouvelle exécution.
+
+Bibliothèque standard uniquement. Mesure RSS maximum du processus, durée murale et CPU de la commande d'évaluation, pas consommation électrique ni coût. Le parcours de vérification journalise aussi chaque durée externe. Pas d'API réseau dans le paquet, pas de poids IA, pas d'interface médicale. Les scores ne sont jamais transformés en recommandation.

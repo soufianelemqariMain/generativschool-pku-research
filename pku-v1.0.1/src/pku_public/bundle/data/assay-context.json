@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "source_id": "S02",
+  "doi": "10.3390/genes10060459",
+  "protein_ref": "NP_000268.1",
+  "transcript_ref": "NM_000277.2",
+  "system": "E_coli_XL1_blue",
+  "construct": "MBP_PAH",
+  "endpoint": "activity_pct_WT",
+  "detection": "HPLC_tyrosine",
+  "assay_temperature_C": 25,
+  "assay_Phe_mM": 10,
+  "assay_BH4_uM": 75,
+  "intervention": "GroEL_ES_coexpression",
+  "biological_purifications": 3,
+  "total_assays_per_condition": 9,
+  "replicates_raw_available": false,
+  "wt_denominator_condition_specificity": "not_resolved",
+  "license": "CC-BY-4.0",
+  "attribution": "Pecimonova et al. 2019; extracted from Table 3; see Q01"
+}

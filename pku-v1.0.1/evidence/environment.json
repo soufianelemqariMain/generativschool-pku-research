@@ -1,0 +1,10 @@
+{
+  "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "processor": "arm64",
+  "commands": 12,
+  "cumulative_wall_seconds": 6.678687084000001,
+  "cost_total": null,
+  "fresh_venv": true,
+  "network": "pip --no-index; pipeline has no network calls"
+}

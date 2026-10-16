@@ -1,0 +1,169 @@
+[
+  {
+    "argv": [
+      "<PYTHON>",
+      "-m",
+      "pip",
+      "wheel",
+      "--no-deps",
+      "--no-build-isolation",
+      "--no-index",
+      "--wheel-dir",
+      "<OUTPUT>",
+      "<PROJECT>"
+    ],
+    "returncode": 0,
+    "expected_returncode": 0,
+    "wall_seconds": 1.828919125,
+    "output": "WARNING: The directory '<PRIVATE_PATH>' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.\nProcessing <PROJECT>\n  DEPRECATION: A future pip version will change local packages to be built in-place without first copying to a temporary directory. We recommend you use --use-feature=in-tree-build to test your packages with this new behavior before it becomes the default.\n   pip 21.3 will remove support for this functionality. You can find discussion regarding this at https://github.com/pypa/pip/issues/7555.\n    Preparing wheel metadata: started\n    Preparing wheel metadata: finished with status 'done'\nBuilding wheels for collected packages: generativschool-pku-public\n  Building wheel for generativschool-pku-public (PEP 517): started\n  Building wheel for generativschool-pku-public (PEP 517): finished with status 'done'\n  Created wheel for generativschool-pku-public: filename=generativschool_pku_public-1.0.1-py3-none-any.whl size=38041 sha256=9f3e793745328eba423595068c30e7d0a3a3f1814e5aa303f867ce44862f2d23\n  Stored in directory: <PRIVATE_PATH>\nSuccessfully built generativschool-pku-public\n"
+  },
+  {
+    "argv": [
+      "<PYTHON>",
+      "-m",
+      "venv",
+      "<TEMP>/venv"
+    ],
+    "returncode": 0,
+    "expected_returncode": 0,
+    "wall_seconds": 2.112151959,
+    "output": ""
+  },
+  {
+    "argv": [
+      "<TEMP>/venv/bin/python",
+      "-m",
+      "pip",
+      "install",
+      "--no-index",
+      "--no-deps",
+      "<OUTPUT>/generativschool_pku_public-1.0.1-py3-none-any.whl"
+    ],
+    "returncode": 0,
+    "expected_returncode": 0,
+    "wall_seconds": 0.8393310409999994,
+    "output": "WARNING: The directory '<PRIVATE_PATH>' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.\nProcessing <OUTPUT>/generativschool_pku_public-1.0.1-py3-none-any.whl\nInstalling collected packages: generativschool-pku-public\nSuccessfully installed generativschool-pku-public-1.0.1\n"
+  },
+  {
+    "argv": [
+      "<TEMP>/venv/bin/python",
+      "-c",
+      "import pku_public; print(pku_public.__version__, pku_public.__file__)"
+    ],
+    "returncode": 0,
+    "expected_returncode": 0,
+    "wall_seconds": 0.03243112500000045,
+    "output": "1.0.1 <TEMP>/venv/lib/python3.9/site-packages/pku_public/__init__.py\n"
+  },
+  {
+    "argv": [
+      "<TEMP>/venv/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "<PROJECT>/tests",
+      "-v"
+    ],
+    "returncode": 0,
+    "expected_returncode": 0,
+    "wall_seconds": 0.2755871669999994,
+    "output": "test_comparison_rejects_drift (test_public.PublicTests) ... ok\ntest_conflict (test_public.PublicTests) ... ok\ntest_duplicate (test_public.PublicTests) ... ok\ntest_fold_leak_guard (test_public.PublicTests) ... ok\ntest_hypothesis_boundaries (test_public.PublicTests) ... ok\ntest_incomplete_pair (test_public.PublicTests) ... ok\ntest_missing_not_zero (test_public.PublicTests) ... ok\ntest_nonfinite (test_public.PublicTests) ... ok\ntest_pilot_and_fold_parameters (test_public.PublicTests) ... ok\ntest_restore_and_corruption (test_public.PublicTests) ... {\"status\": \"rejected\", \"reason\": \"Destination existante: refus ecrasement\"}\nok\ntest_rights (test_public.PublicTests) ... ok\ntest_rights_xml (test_public.PublicTests) ... ok\ntest_source_altered (test_public.PublicTests) ... ok\ntest_source_extraction_and_admission (test_public.PublicTests) ... ok\ntest_system_and_endpoint (test_public.PublicTests) ... ok\ntest_unit (test_public.PublicTests) ... ok\ntest_zero_semantics (test_public.PublicTests) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 0.072s\n\nOK\n{\n  \"status\": \"ok\",\n  \"command\": \"evaluate\",\n  \"observations\": 14,\n  \"variants\": 7\n}\n{\n  \"status\": \"ok\",\n  \"command\": \"restore\",\n  \"report_identical\": true\n}\n{\"status\": \"rejected\", \"log\": [{\"status\": \"rejected\", \"reason\": \"Source/donnee/configuration alteree: sources/PMC6628251.xml\"}], \"warning\": \"Calcul sur moyennes publiees PAH/GroEL-ES bacterien; aucune validation biologique ou recommandation therapeutique.\"}\n"
+  },
+  {
+    "argv": [
+      "<TEMP>/venv/bin/pku-public",
+      "ingest",
+      "--out",
+      "<OUTPUT>/ingested"
+    ],
+    "returncode": 0,
+    "expected_returncode": 0,
+    "wall_seconds": 0.5324726250000005,
+    "output": "{\n  \"status\": \"ok\",\n  \"command\": \"ingest\",\n  \"observations\": 14,\n  \"variants\": 7\n}\n"
+  },
+  {
+    "argv": [
+      "<TEMP>/venv/bin/pku-public",
+      "audit",
+      "--bundle",
+      "<OUTPUT>/ingested",
+      "--out",
+      "<OUTPUT>/audit.json"
+    ],
+    "returncode": 0,
+    "expected_returncode": 0,
+    "wall_seconds": 0.16086795799999987,
+    "output": "{\n  \"status\": \"ok\",\n  \"command\": \"audit\",\n  \"observations\": 14,\n  \"variants\": 7\n}\n"
+  },
+  {
+    "argv": [
+      "<TEMP>/venv/bin/pku-public",
+      "evaluate",
+      "--bundle",
+      "<OUTPUT>/ingested",
+      "--out",
+      "<OUTPUT>/run"
+    ],
+    "returncode": 0,
+    "expected_returncode": 0,
+    "wall_seconds": 0.21295441699999973,
+    "output": "{\n  \"status\": \"ok\",\n  \"command\": \"evaluate\",\n  \"observations\": 14,\n  \"variants\": 7\n}\n"
+  },
+  {
+    "argv": [
+      "<TEMP>/venv/bin/pku-public",
+      "compare",
+      "--run",
+      "<OUTPUT>/run",
+      "--out",
+      "<OUTPUT>/comparison.json"
+    ],
+    "returncode": 0,
+    "expected_returncode": 0,
+    "wall_seconds": 0.16924016699999989,
+    "output": "{\n  \"status\": \"passed\",\n  \"tolerance\": 1e-10,\n  \"max_abs_error\": 0.0,\n  \"numeric_comparisons\": 68\n}\n"
+  },
+  {
+    "argv": [
+      "<TEMP>/venv/bin/pku-public",
+      "export",
+      "--run",
+      "<OUTPUT>/run",
+      "--out",
+      "<OUTPUT>/hypothesis-plan.json"
+    ],
+    "returncode": 0,
+    "expected_returncode": 0,
+    "wall_seconds": 0.18160850000000028,
+    "output": "{\n  \"status\": \"design_only_not_executed\",\n  \"purpose\": \"Selection de prochains essais; aucun classement de traitements\",\n  \"published_observation\": {\n    \"source\": \"Pecimonova et al. 2019, DOI 10.3390/genes10060459, Table 3\",\n    \"variant\": \"p.Ala342Pro\",\n    \"baseline_activity_pct_WT\": 0.0,\n    \"treated_activity_pct_WT\": 9.9,\n    \"delta_pp\": 9.9,\n    \"baseline_sd\": null,\n    \"treated_sd\": 0.7,\n    \"delta_uncertainty\": null,\n    \"conflict\": \"\"\n  },\n  \"hypothesis_to_refute\": \"Le contraste publie Ala342Pro avec/sans GroEL/ES est reproductible dans le meme systeme bacterien.\",\n  \"system\": \"E. coli XL1 blue, MBP-PAH purifiee; selection de fractions selon section 2.3\",\n  \"controls\": [\n    \"WT avec et sans co-expression\",\n    \"Variant avec et sans co-expression\",\n    \"Blanc analytique et controle de detection\",\n    \"Suivi des lots et fractions de purification\"\n  ],\n  \"collection_design\": [\n    \"Conserver les mesures brutes de chaque purification et essai technique, sans pseudo-replication\",\n    \"Documenter limite de detection, denominateur WT, contexte et deviations\",\n    \"Pre-enregistrer analyse, seuil de pertinence et effectif sur precision visee; aucun seuil inferentiel deduit de sept moyennes\",\n    \"Ordre randomise et analyse masquee si faisables; validation par equipe competente avant execution\"\n  ],\n  \"failure_criteria\": [\n    \"Contraste non reproduit avec precision predefinie\",\n    \"Echec des controles analytiques ou denominateur non comparable\",\n    \"Changement de fraction/systeme empechant attribution a la co-expression\"\n  ],\n  \"uncertainty\": \"SD publies conserves; covariance et donnees brutes absentes, incertitude de delta inconnue.\",\n  \"warning\": \"Calcul sur moyennes publiees PAH/GroEL-ES bacterien; aucune validation biologique ou recommandation therapeutique.\"\n}\n"
+  },
+  {
+    "argv": [
+      "<TEMP>/venv/bin/pku-public",
+      "restore",
+      "--run",
+      "<OUTPUT>/run",
+      "--out",
+      "<OUTPUT>/restored"
+    ],
+    "returncode": 0,
+    "expected_returncode": 0,
+    "wall_seconds": 0.1770855410000003,
+    "output": "{\n  \"status\": \"ok\",\n  \"command\": \"restore\",\n  \"report_identical\": true\n}\n"
+  },
+  {
+    "argv": [
+      "<TEMP>/venv/bin/pku-public",
+      "audit",
+      "--bundle",
+      "<TEMP>/bad",
+      "--out",
+      "<OUTPUT>/rejected.json"
+    ],
+    "returncode": 2,
+    "expected_returncode": 2,
+    "wall_seconds": 0.1560374590000002,
+    "output": "{\"status\": \"rejected\", \"log\": [{\"status\": \"rejected\", \"reason\": \"Source/donnee/configuration alteree: data/activity_pairs.csv\"}], \"warning\": \"Calcul sur moyennes publiees PAH/GroEL-ES bacterien; aucune validation biologique ou recommandation therapeutique.\"}\n"
+  }
+]

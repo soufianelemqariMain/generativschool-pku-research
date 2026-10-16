@@ -1,0 +1,36 @@
+{
+  "status": "design_only_not_executed",
+  "purpose": "Selection de prochains essais; aucun classement de traitements",
+  "published_observation": {
+    "source": "Pecimonova et al. 2019, DOI 10.3390/genes10060459, Table 3",
+    "variant": "p.Ala342Pro",
+    "baseline_activity_pct_WT": 0.0,
+    "treated_activity_pct_WT": 9.9,
+    "delta_pp": 9.9,
+    "baseline_sd": null,
+    "treated_sd": 0.7,
+    "delta_uncertainty": null,
+    "conflict": ""
+  },
+  "hypothesis_to_refute": "Le contraste publie Ala342Pro avec/sans GroEL/ES est reproductible dans le meme systeme bacterien.",
+  "system": "E. coli XL1 blue, MBP-PAH purifiee; selection de fractions selon section 2.3",
+  "controls": [
+    "WT avec et sans co-expression",
+    "Variant avec et sans co-expression",
+    "Blanc analytique et controle de detection",
+    "Suivi des lots et fractions de purification"
+  ],
+  "collection_design": [
+    "Conserver les mesures brutes de chaque purification et essai technique, sans pseudo-replication",
+    "Documenter limite de detection, denominateur WT, contexte et deviations",
+    "Pre-enregistrer analyse, seuil de pertinence et effectif sur precision visee; aucun seuil inferentiel deduit de sept moyennes",
+    "Ordre randomise et analyse masquee si faisables; validation par equipe competente avant execution"
+  ],
+  "failure_criteria": [
+    "Contraste non reproduit avec precision predefinie",
+    "Echec des controles analytiques ou denominateur non comparable",
+    "Changement de fraction/systeme empechant attribution a la co-expression"
+  ],
+  "uncertainty": "SD publies conserves; covariance et donnees brutes absentes, incertitude de delta inconnue.",
+  "warning": "Calcul sur moyennes publiees PAH/GroEL-ES bacterien; aucune validation biologique ou recommandation therapeutique."
+}
